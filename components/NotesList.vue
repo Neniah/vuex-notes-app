@@ -1,14 +1,17 @@
 <template>
   <div id="notes-list">
+
     <div id="list-header">
       <h2>Notes | Vuex</h2>
       <div class="btn-group btn-group-justified" rote="group">
-        <button type="button" class="btn btn-default"
-          @click="show = 'all'"
-          :class="{active: show === 'all'}">
-          All Notes
-        </button>
-      </div>
+        <!-- All Notes button -->
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default"
+            @click="show = 'all'"
+            :class="{active: show === 'all'}">
+            All Notes
+          </button>
+        </div>
       <!-- Favorites Button -->
       <div class="btn-group" role="groupd">
         <button type="button" class="btn btn-default"
@@ -32,6 +35,8 @@
       </a>
     </div>
   </div>
+
+</div>
 </template>
 
 <script>

@@ -5,5 +5,5 @@ import App from './components/App.vue'
 new Vue({
   store,  // inject store to all children
   el: 'body',
-  compoenents: { App }
+  components: { App }
 })
